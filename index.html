@@ -257,14 +257,25 @@
                     <p>Your Message</p>
                     <textarea class="input-message" name="message" placeholder="Share your thoughts..." required></textarea>
             
-                     <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://santoshcode2.github.io/Modern-Portfolio/thank-you.html">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll get back to you soon.">
-        <input type="text" name="_honey" style="display:none">
-        
-        <button type="submit"><i class='bx bx-send'></i>Send Message</button>
-    </form>
+                     <<input type="hidden" name="_next" 
+           value="https://santoshcode2.github.io/Modern-Portfolio/thank-you.html">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <button type="submit" id="submitBtn">
+        <i class='bx bx-send'></i> Send Message
+    </button>
+    
+    <div id="loading" style="display:none;">
+        <i class='bx bx-loader-circle bx-spin'></i> Sending...
+    </div>
+</form>
+
+<script>
+function showLoading() {
+    document.getElementById('submitBtn').style.display = 'none';
+    document.getElementById('loading').style.display = 'block';
+}
 </div>
 
 
