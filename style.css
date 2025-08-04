@@ -73,6 +73,16 @@ header ul{
 
 }
 
+
+
+
+
+
+
+
+
+
+
 header ul li{
    list-style: none;
 }
@@ -496,7 +506,7 @@ header ul a{
     opacity:0.7;
 }
 
-.hover-sign{
+/* .hover-sign{
     position: absolute;
     display: flex;
     align-items: center;
@@ -515,9 +525,9 @@ header ul a{
     left: 40%;
     border-radius: 50%;
     animation: hoverAnimation 3s ease-in-out infinite ;
-}
+} */
 
-@keyframes hoverAnimation{
+/* @keyframes hoverAnimation{
     0%{
         box-shadow: 0 0 5px lightgray;
         transform: translate(100%,50%) rotate(30deg);
@@ -526,11 +536,11 @@ header ul a{
         box-shadow: 0 0 15px lightgray;
         transform: translatex(80%,50%) rotate(0deg);
     }
-}
-
+} */
+/* 
 .hover-sign.active{
     display: none ;
-}
+} */
 /* Skill Section */
 .skills-section{
     display: flex;
