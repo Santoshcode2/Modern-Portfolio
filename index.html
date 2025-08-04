@@ -258,7 +258,7 @@ Admins generate content using Google Gemini, with secure JWT-based login, dynami
                  <button><i class='bx bx-send' >Send Message</i></button>
               </div> -->
               <div class="contact-box autoBlur">
-                <form id="contactForm" action="https://formsubmit.co/santoshprasad2232@gmail.com" method="POST">
+               <form action="https://formsubmit.co/380f2b6049d857f5221fe47f1004056c" method="POST">
                     <p>Whether you're looking to build a new website, improve your existing platform, or bring a unique project to file. I'm here to help.</p>
             
                     <p>Full Name</p>
@@ -270,17 +270,25 @@ Admins generate content using Google Gemini, with secure JWT-based login, dynami
                     <p>Your Message</p>
                     <textarea class="input-message" name="message" placeholder="Share your thoughts..." required></textarea>
             
-                    <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="#">
-        <input type="hidden" name="_template" value="basic">
-        
-        <!-- Add this div for messages -->
-        <div id="formMessage" style="display: none; margin-top: 20px; padding: 10px; background: #72a1de; color: white; border-radius: 5px;">
-            Message sent successfully!
-        </div>
-        
-        <button type="submit"><i class='bx bx-send'></i>Send Message</button>
-    </form>
+                     <<input type="hidden" name="_next" 
+           value="https://santoshcode2.github.io/Modern-Portfolio/thank-you.html">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <button type="submit" id="submitBtn">
+        <i class='bx bx-send'></i> Send Message
+    </button>
+    
+    <div id="loading" style="display:none;">
+        <i class='bx bx-loader-circle bx-spin'></i> Sending...
+    </div>
+</form>
+
+<script>
+function showLoading() {
+    document.getElementById('submitBtn').style.display = 'none';
+    document.getElementById('loading').style.display = 'block';
+}
 </div>
 
 
